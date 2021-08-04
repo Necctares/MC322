@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_6W__IMAGEeuJSv9n1qnnzg" name="lab09">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_6X8aUMAGEeuJSv9n1qnnzg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_D80C0MAHEeuJSv9n1qnnzg" name="193400_Lab09">
+      <packagedElement xmi:type="uml:Package" xmi:id="_D9y6QMAHEeuJSv9n1qnnzg" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_D90IYMAHEeuJSv9n1qnnzg" name="unicamp">
+          <packagedElement xmi:type="uml:Package" xmi:id="_D91WgMAHEeuJSv9n1qnnzg" name="mc322">
+            <packagedElement xmi:type="uml:Package" xmi:id="_D92koMAHEeuJSv9n1qnnzg" name="lab09">
+              <packagedElement xmi:type="uml:Class" xmi:id="_D95n8MAHEeuJSv9n1qnnzg" name="Pessoa" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_EB4JAMAHEeuJSv9n1qnnzg" name="nome" visibility="private" type="_D995YMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_EB5-MMAHEeuJSv9n1qnnzg" name="idade" visibility="private" type="_D995YMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_EB7MUMAHEeuJSv9n1qnnzg" name="cpf" visibility="private" type="_D995YMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ECLD8MAHEeuJSv9n1qnnzg" name="Pessoa" specification="_ECAr4MAHEeuJSv9n1qnnzg">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    this.nome = nome;&#xD;
+    this.idade = idade;&#xD;
+    this.cpf = cpf;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ECRKkMAHEeuJSv9n1qnnzg" name="getNome" specification="_ECM5IMAHEeuJSv9n1qnnzg">
+                  <language>JAVA</language>
+                  <body>&#xD;
+    return nome;&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ECAr4MAHEeuJSv9n1qnnzg" name="Pessoa" visibility="private" method="_ECLD8MAHEeuJSv9n1qnnzg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ECGLcMAHEeuJSv9n1qnnzg" name="nome" type="_D995YMAHEeuJSv9n1qnnzg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ECHZkMAHEeuJSv9n1qnnzg" name="idade" type="_D995YMAHEeuJSv9n1qnnzg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ECJOwMAHEeuJSv9n1qnnzg" name="cpf" type="_D995YMAHEeuJSv9n1qnnzg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ECM5IMAHEeuJSv9n1qnnzg" name="getNome" visibility="public" method="_ECRKkMAHEeuJSv9n1qnnzg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_ECOHQMAHEeuJSv9n1qnnzg" type="_D995YMAHEeuJSv9n1qnnzg" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ECVcAMAHEeuJSv9n1qnnzg" name="Fila">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ECWqIMAHEeuJSv9n1qnnzg" name="Fila" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_EChpQMAHEeuJSv9n1qnnzg" name="fila" visibility="private" type="_ECcwwMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ECnv4MAHEeuJSv9n1qnnzg" name="Fila" specification="_ECjecMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    fila = new Lista();&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ECwSwMAHEeuJSv9n1qnnzg" name="Fila" specification="_ECqMIMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    fila = new Lista(pessoa);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDBYgMAHEeuJSv9n1qnnzg" name="adicionar" specification="_ECyvAMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return fila.adicionarFim(pessoa);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDFC4MAHEeuJSv9n1qnnzg" name="remover" specification="_EDDNsMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return fila.removerInicio();&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDItQMAHEeuJSv9n1qnnzg" name="contarTamanho" specification="_EDG4EMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return fila.contarTamanho();&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDLwkMAHEeuJSv9n1qnnzg" name="limparFila" specification="_EDKicMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    fila.limparLista();&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDOM0MAHEeuJSv9n1qnnzg" name="imprimirFila" specification="_EDM-sMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    fila.imprimirLista();&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ECjecMAHEeuJSv9n1qnnzg" name="Fila" visibility="private" method="_ECnv4MAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ECqMIMAHEeuJSv9n1qnnzg" name="Fila" visibility="private" method="_ECwSwMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ECvEoMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ECyvAMAHEeuJSv9n1qnnzg" name="adicionar" visibility="public" method="_EDBYgMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EC_jUMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDAxcMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDDNsMAHEeuJSv9n1qnnzg" name="remover" visibility="public" method="_EDFC4MAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDEb0MAHEeuJSv9n1qnnzg" type="_D95n8MAHEeuJSv9n1qnnzg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDG4EMAHEeuJSv9n1qnnzg" name="contarTamanho" visibility="public" method="_EDItQMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDIGMMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDKicMAHEeuJSv9n1qnnzg" name="limparFila" visibility="public" method="_EDLwkMAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDM-sMAHEeuJSv9n1qnnzg" name="imprimirFila" visibility="public" method="_EDOM0MAHEeuJSv9n1qnnzg"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_EDTsYMAHEeuJSv9n1qnnzg" name="FilaAtendimentoComp" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_EDU6gMAHEeuJSv9n1qnnzg" name="normal" visibility="private" type="_ECWqIMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_EDWvsMAHEeuJSv9n1qnnzg" name="prioritaria" visibility="private" type="_ECWqIMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDc2UMAHEeuJSv9n1qnnzg" name="FilaAtendimentoComp" specification="_EDYk4MAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    normal = new Fila();&#xD;
+    prioritaria = new Fila();&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDhu0MAHEeuJSv9n1qnnzg" name="adicionar" specification="_EDergMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return normal.adicionar(pessoa);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDmnUMAHEeuJSv9n1qnnzg" name="adicionarPrioritario" specification="_EDjkAMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return prioritaria.adicionar(pessoa);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDq4wMAHEeuJSv9n1qnnzg" name="remover" specification="_EDpDkMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    if (prioritaria.contarTamanho() > 0) {&#xD;
+        return prioritaria.remover();&#xD;
+    } else {&#xD;
+        return normal.remover();&#xD;
+    }&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EDy0kMAHEeuJSv9n1qnnzg" name="contarTamanho" specification="_EDwYUMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return prioritaria.contarTamanho() + normal.contarTamanho();&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ED1Q0MAHEeuJSv9n1qnnzg" name="imprimirFila" specification="_ED0CsMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    System.out.printf(&quot;Pessoas prioritarias na fila (%d):\n&quot;, prioritaria.contarTamanho());&#xD;
+    prioritaria.imprimirFila();&#xD;
+    System.out.printf(&quot;Pessoas sem prioridade na fila (%d):\n&quot;, normal.contarTamanho());&#xD;
+    normal.imprimirFila();&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDYk4MAHEeuJSv9n1qnnzg" name="FilaAtendimentoComp" visibility="private" method="_EDc2UMAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDergMAHEeuJSv9n1qnnzg" name="adicionar" visibility="public" method="_EDhu0MAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDfSkMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDggsMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDjkAMAHEeuJSv9n1qnnzg" name="adicionarPrioritario" visibility="public" method="_EDmnUMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDkyIMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDlZMMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDpDkMAHEeuJSv9n1qnnzg" name="remover" visibility="public" method="_EDq4wMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDpqoMAHEeuJSv9n1qnnzg" type="_D95n8MAHEeuJSv9n1qnnzg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_EDwYUMAHEeuJSv9n1qnnzg" name="contarTamanho" visibility="public" method="_EDy0kMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_EDxmcMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ED0CsMAHEeuJSv9n1qnnzg" name="imprimirFila" visibility="public" method="_ED1Q0MAHEeuJSv9n1qnnzg"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_z5bCQMAHEeuJSv9n1qnnzg" name="Lista">
+                <packagedElement xmi:type="uml:Class" xmi:id="_z5c3cMAHEeuJSv9n1qnnzg" name="Lista" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_z5kMMMAHEeuJSv9n1qnnzg" name="inicio" visibility="private" type="_z5degMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z5nPgMAHEeuJSv9n1qnnzg" name="Lista" specification="_z5kzQMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    inicio = null;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z5ukQcAHEeuJSv9n1qnnzg" name="Lista" specification="_z5rg8MAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    inicio = new No(pessoa);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z5wZccAHEeuJSv9n1qnnzg" name="adicionarInicio" specification="_z5vLUMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    No aux = inicio;&#xD;
+    inicio = new No(pessoa);&#xD;
+    inicio.proximoNo = aux;&#xD;
+    return true;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z5yOoMAHEeuJSv9n1qnnzg" name="adicionarFim" specification="_z5xAgMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    No atual = inicio;&#xD;
+    while (atual.proximoNo != null) {&#xD;
+        atual = atual.proximoNo;&#xD;
+    }&#xD;
+    atual.proximoNo = new No(pessoa);&#xD;
+    return true;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z515AMAHEeuJSv9n1qnnzg" name="adicionar" specification="_z5y1sMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    No atual = inicio;&#xD;
+    while (posicao > 0) {&#xD;
+        posicao -= 1;&#xD;
+        if (atual.proximoNo != null) {&#xD;
+            atual = atual.proximoNo;&#xD;
+        } else {&#xD;
+            return false;&#xD;
+        }&#xD;
+    }&#xD;
+    if (atual.proximoNo != null) {&#xD;
+        No aux = atual.proximoNo;&#xD;
+        atual.proximoNo = new No(pessoa);&#xD;
+        atual.proximoNo.proximoNo = aux;&#xD;
+    } else {&#xD;
+        atual.proximoNo = new No(pessoa);&#xD;
+    }&#xD;
+    return true;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z53HIMAHEeuJSv9n1qnnzg" name="removerInicio" specification="_z52gEMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    if (inicio != null) {&#xD;
+        No aux = inicio;&#xD;
+        if (aux.proximoNo != null) {&#xD;
+            inicio = aux.proximoNo;&#xD;
+            inicio.proximoNo = aux.proximoNo.proximoNo;&#xD;
+            return aux.pessoa;&#xD;
+        } else {&#xD;
+            inicio = null;&#xD;
+            return aux.pessoa;&#xD;
+        }&#xD;
+    } else {&#xD;
+        return null;&#xD;
+    }&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z54VQMAHEeuJSv9n1qnnzg" name="removerFim" specification="_z53HIcAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    if (inicio != null) {&#xD;
+        No atual = inicio;&#xD;
+        No anterior = null;&#xD;
+        while (atual.proximoNo != null) {&#xD;
+            anterior = atual;&#xD;
+            atual = atual.proximoNo;&#xD;
+        }&#xD;
+        if (anterior != null) {&#xD;
+            anterior.proximoNo = null;&#xD;
+            return atual.pessoa;&#xD;
+        } else {&#xD;
+            inicio = null;&#xD;
+            return atual.pessoa;&#xD;
+        }&#xD;
+    } else {&#xD;
+        return null;&#xD;
+    }&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z56KcMAHEeuJSv9n1qnnzg" name="remover" specification="_z54VQcAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    if (inicio == null) {&#xD;
+        return null;&#xD;
+    } else {&#xD;
+        No atual = inicio;&#xD;
+        No anterior = null;&#xD;
+        while (posicao > 0) {&#xD;
+            posicao -= 1;&#xD;
+            anterior = atual;&#xD;
+            if (atual.proximoNo != null) {&#xD;
+                atual = atual.proximoNo;&#xD;
+            } else {&#xD;
+                return null;&#xD;
+            }&#xD;
+        }&#xD;
+        if (anterior != null) {&#xD;
+            anterior.proximoNo = null;&#xD;
+            return atual.pessoa;&#xD;
+        } else {&#xD;
+            inicio = null;&#xD;
+            return atual.pessoa;&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z57YkMAHEeuJSv9n1qnnzg" name="contarTamanho" specification="_z56xgMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    int contador = 0;&#xD;
+    No atual = inicio;&#xD;
+    while (atual != null) {&#xD;
+        contador += 1;&#xD;
+        atual = atual.proximoNo;&#xD;
+    }&#xD;
+    return contador;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z57_oMAHEeuJSv9n1qnnzg" name="limparLista" specification="_z57YkcAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    inicio = null;&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z58msMAHEeuJSv9n1qnnzg" name="imprimirLista" specification="_z57_ocAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    for (No atual = inicio; atual != null; atual = atual.proximoNo) {&#xD;
+        System.out.printf(&quot;Pessoa: %s\n&quot;, atual.pessoa.getNome());&#xD;
+    }&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z6AREcAHEeuJSv9n1qnnzg" name="imprimirLista" specification="_z5_C8MAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    No atual = inicio;&#xD;
+    int i = 0;&#xD;
+    while (i != posicaoInicial) {&#xD;
+        i += 1;&#xD;
+        atual = atual.proximoNo;&#xD;
+    }&#xD;
+    for (; atual != null &amp;&amp; posicaoInicial &lt;= posicaoFinal; atual = atual.proximoNo) {&#xD;
+        System.out.printf(&quot;Pessoa: %s\n&quot;, atual.pessoa.getNome());&#xD;
+        posicaoInicial += 1;&#xD;
+    }&#xD;
+    return;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5kzQMAHEeuJSv9n1qnnzg" name="Lista" visibility="public" method="_z5nPgMAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5rg8MAHEeuJSv9n1qnnzg" name="Lista" visibility="public" method="_z5ukQcAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5ukQMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5vLUMAHEeuJSv9n1qnnzg" name="adicionarInicio" visibility="public" method="_z5wZccAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5vyYMAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5wZcMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5xAgMAHEeuJSv9n1qnnzg" name="adicionarFim" visibility="public" method="_z5yOoMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5xAgcAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5xnkMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5y1sMAHEeuJSv9n1qnnzg" name="adicionar" visibility="public" method="_z515AMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z50D0MAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z51R8MAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z51R8cAHEeuJSv9n1qnnzg" name="posicao">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z52gEMAHEeuJSv9n1qnnzg" name="removerInicio" visibility="public" method="_z53HIMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z52gEcAHEeuJSv9n1qnnzg" type="_D95n8MAHEeuJSv9n1qnnzg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z53HIcAHEeuJSv9n1qnnzg" name="removerFim" visibility="public" method="_z54VQMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z53uMMAHEeuJSv9n1qnnzg" type="_D95n8MAHEeuJSv9n1qnnzg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z54VQcAHEeuJSv9n1qnnzg" name="remover" visibility="public" method="_z56KcMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z55jYMAHEeuJSv9n1qnnzg" type="_D95n8MAHEeuJSv9n1qnnzg" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z55jYcAHEeuJSv9n1qnnzg" name="posicao">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z56xgMAHEeuJSv9n1qnnzg" name="contarTamanho" visibility="public" method="_z57YkMAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z56xgcAHEeuJSv9n1qnnzg" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z57YkcAHEeuJSv9n1qnnzg" name="limparLista" visibility="public" method="_z57_oMAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z57_ocAHEeuJSv9n1qnnzg" name="imprimirLista" visibility="public" method="_z58msMAHEeuJSv9n1qnnzg"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z5_C8MAHEeuJSv9n1qnnzg" name="imprimirLista" visibility="public" method="_z6AREcAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5_C8cAHEeuJSv9n1qnnzg" name="posicaoInicial">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z6AREMAHEeuJSv9n1qnnzg" name="posicaoFinal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_z5degMAHEeuJSv9n1qnnzg" name="No">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_z6BfMMAHEeuJSv9n1qnnzg" name="pessoa" visibility="private" type="_D95n8MAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_z6CGQMAHEeuJSv9n1qnnzg" name="proximoNo" visibility="private" type="_z5degMAHEeuJSv9n1qnnzg" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_z6GXscAHEeuJSv9n1qnnzg" name="No" specification="_z6CtUMAHEeuJSv9n1qnnzg">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    this.pessoa = pessoa;&#xD;
+    proximoNo = null;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_z6CtUMAHEeuJSv9n1qnnzg" name="No" visibility="private" method="_z6GXscAHEeuJSv9n1qnnzg">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_z6GXsMAHEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_D98EMMAHEeuJSv9n1qnnzg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_D98rQMAHEeuJSv9n1qnnzg" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_D99SUMAHEeuJSv9n1qnnzg" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_D995YMAHEeuJSv9n1qnnzg" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ECYfUMAHEeuJSv9n1qnnzg" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ECZGYMAHEeuJSv9n1qnnzg" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ECZtcMAHEeuJSv9n1qnnzg" name="unicamp">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ECaUgMAHEeuJSv9n1qnnzg" name="mc322">
+            <packagedElement xmi:type="uml:Package" xmi:id="_ECbioMAHEeuJSv9n1qnnzg" name="lab09">
+              <packagedElement xmi:type="uml:Package" xmi:id="_ECcJsMAHEeuJSv9n1qnnzg" name="Lista">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ECcwwMAHEeuJSv9n1qnnzg" name="Lista"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-O-O4MAJEeuJSv9n1qnnzg" memberEnd="_-O-O48AJEeuJSv9n1qnnzg _-O-18sAJEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-O-O4cAJEeuJSv9n1qnnzg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-O-O4sAJEeuJSv9n1qnnzg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-O-O48AJEeuJSv9n1qnnzg" name="pessoa" type="_D95n8MAHEeuJSv9n1qnnzg" aggregation="composite" association="_-O-O4MAJEeuJSv9n1qnnzg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-O-18MAJEeuJSv9n1qnnzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-O-18cAJEeuJSv9n1qnnzg" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-O-18sAJEeuJSv9n1qnnzg" name="lista" type="_z5c3cMAHEeuJSv9n1qnnzg" association="_-O-O4MAJEeuJSv9n1qnnzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dLtXYMALEeuJSv9n1qnnzg" memberEnd="_dLvMkcALEeuJSv9n1qnnzg _dLvzosALEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dLulgMALEeuJSv9n1qnnzg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dLvMkMALEeuJSv9n1qnnzg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dLvzosALEeuJSv9n1qnnzg" name="fila" type="_ECWqIMAHEeuJSv9n1qnnzg" association="_dLtXYMALEeuJSv9n1qnnzg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dLvMkcALEeuJSv9n1qnnzg" name="lista" type="_z5c3cMAHEeuJSv9n1qnnzg" aggregation="composite" association="_dLtXYMALEeuJSv9n1qnnzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oy4O0MALEeuJSv9n1qnnzg" memberEnd="_oy414sALEeuJSv9n1qnnzg _oy5c8cALEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oy414MALEeuJSv9n1qnnzg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oy414cALEeuJSv9n1qnnzg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oy414sALEeuJSv9n1qnnzg" name="fila" type="_ECWqIMAHEeuJSv9n1qnnzg" aggregation="composite" association="_oy4O0MALEeuJSv9n1qnnzg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oy4148ALEeuJSv9n1qnnzg" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oy5c8MALEeuJSv9n1qnnzg" value="2"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oy5c8cALEeuJSv9n1qnnzg" name="filaatendimentocomp" type="_EDTsYMAHEeuJSv9n1qnnzg" association="_oy4O0MALEeuJSv9n1qnnzg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D9NEYMAHEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9NEYcAHEeuJSv9n1qnnzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D9vP4MAHEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9v28MAHEeuJSv9n1qnnzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D9weAMAHEeuJSv9n1qnnzg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9xFEMAHEeuJSv9n1qnnzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_EB1FsMAHEeuJSv9n1qnnzg" name="java.lang.String" base_Classifier="_D995YMAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_ECDvMMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_ECAr4MAHEeuJSv9n1qnnzg"/>
+  <PapyrusJava:External xmi:id="_ECf0EMAHEeuJSv9n1qnnzg" name="com.unicamp.mc322.lab09.Lista.Lista" base_Classifier="_ECcwwMAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_ECl6sMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_ECjecMAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_ECtPcMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_ECqMIMAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_EDbBIMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_EDYk4MAHEeuJSv9n1qnnzg"/>
+  <PapyrusJava:External xmi:id="_z5i-EMAHEeuJSv9n1qnnzg" name="No" base_Classifier="_z5degMAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_z5mocMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_z5kzQMAHEeuJSv9n1qnnzg"/>
+  <PapyrusJava:External xmi:id="_z5q54MAHEeuJSv9n1qnnzg" name="com.unicamp.mc322.lab09.Pessoa" base_Classifier="_D95n8MAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_z5t9MMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_z5rg8MAHEeuJSv9n1qnnzg"/>
+  <standard:Create xmi:id="_z6EigMAHEeuJSv9n1qnnzg" base_BehavioralFeature="_z6CtUMAHEeuJSv9n1qnnzg"/>
+</xmi:XMI>
